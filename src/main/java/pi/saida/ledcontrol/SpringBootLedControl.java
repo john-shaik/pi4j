@@ -31,7 +31,7 @@ public class SpringBootLedControl {
 	private GpioPinDigitalOutput getPin() {
 		if( pin == null ) {
 			GpioController gpio = GpioFactory.getInstance();
-			pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_02, "PinLED", PinState.LOW);
+			pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_17, "PinLED", PinState.LOW);
 		}
 		return pin;
 	}
