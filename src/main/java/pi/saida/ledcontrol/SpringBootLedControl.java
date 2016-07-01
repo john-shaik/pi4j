@@ -13,7 +13,7 @@ import com.pi4j.io.gpio.RaspiPin;
 @Controller
 public class SpringBootLedControl {
 	
-	GpioPinDigitalOutput pin = null;
+	private static GpioPinDigitalOutput pin = null;
 	
 	@RequestMapping("/")
 	@ResponseBody
